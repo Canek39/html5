@@ -2,6 +2,13 @@
 body{
     font-family: 'Lato', sans-serif;
 }
+.hidden_heading{
+    position: absolute;
+    left: -9999999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
 header{
     background: #222222;
 }
@@ -9,6 +16,7 @@ header{
 .container{
     max-width: 1140px;
     margin:0 auto;
+    padding: 0 16px;
 }
 
 .flex{
@@ -83,12 +91,11 @@ header{
 .banner{
     background: #F1E4E6;
     
-    margin-bottom: 65px;
 }
 .promo{
     background: url("../img/promo_back.png") -222px bottom no-repeat;
     min-height: 764px;
-
+    margin-bottom: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +121,6 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 16px;
 }
 .category_item{
     width: 32.5%;
@@ -154,7 +160,7 @@ header{
 
 .block_fetuder{
     margin: 80px 0 95px;
-    padding:0 16px; 
+     
 }
 .fetured_card{
     display:flex;
@@ -357,6 +363,121 @@ footer{
     margin: 0 32px;
 }
 
+.fb_ico{
+    background: url("../img/sf.png") no-repeat;
+    padding: 7px 16px;
+    margin-right: 7px;
+}
+
+.fb_ico:hover{
+    background: url("../img/sf_hover.png") no-repeat;
+}
+.instagram_ico{
+    background: url("../img/si.png") no-repeat;
+    padding: 7px 16px;
+    margin-right: 7px;
+}
+.instagram_ico:hover{
+    background: url("../img/si_hover.png") no-repeat;
+
+}
+.pinterest_ico{
+    background: url("../img/sp.png") no-repeat;
+    padding: 7px 16px;
+    margin-right: 7px;
+}
+.pinterest_ico:hover{
+    background: url("../img/sp_hover.png") no-repeat;
+}
+.twitter_ico{
+    background: url("../img/st.png") no-repeat;
+    padding: 7px 16px;
+}
+.twitter_ico:hover{
+    background: url("../img/st_hover.png") no-repeat;
+}
+
+.page_name{
+    min-height: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page_title{
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.breadcrumb{
+    font-size: 14px;
+    line-height: 17px;
+}
+.breadcrumb_link{
+    text-decoration: none;
+    color:#636363;
+    font-weight: 300;
+    
+}
+.current_page{
+    font-weight: bold;
+    color: #F16D7F;
+}
+.fetured_options{
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0 16px;
+    margin-bottom: 64px;
+    display: flex;
+}
+.filter_button{
+    background: url("../img/filter_ico.svg") center right no-repeat;
+    text-decoration: none;
+    font-weight: 600;
+    color:#000;
+    padding-right: 27px;
+}
+.fetured_sort{
+    margin-left: 304px;
+}
+.fetured_sort_button{
+    color: #6F6E6E;
+    text-decoration: none;
+    background: url("../img/sort_arrow_ico.png") center right no-repeat;
+    padding-right: 22px;
+    margin-left: 28px;
+}
+
+.page_nav{
+    border: 1px solid #EBEBEB;
+    color: #EBEBEB;
+    padding: 15px;
+    border-radius: 5px;
+    max-width:283px;
+    text-align: center;
+    margin: 0 auto;
+}
+.page_nav a{
+    text-decoration: none;
+    color: #EBEBEB;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 8px;
+}
+.left_arrow{
+    background: url("../img/left_arrow_page_nav.svg") center no-repeat;
+    padding: 0px 6px;
+}
+.right_arrow{
+    background: url("../img/right_arrow_page_nav.svg") center no-repeat;
+    padding: 0px 6px;
+}
+.page_nav a.active{
+    color:#EF5B70;
+}
+
 @media screen and (max-width:1023px){
     .menu_list{
         right: 0;
@@ -365,6 +486,7 @@ footer{
         min-height: 367px;
         background-size: contain;
         background-position: inherit;
+        margin-bottom: 20px;
     }
     .banner_heading{
         font-size: 24px;
@@ -400,17 +522,23 @@ footer{
     .footer_wrapper{
         padding: 0 32px;
     }
+    .fetured_options{
+        display: flex;
+        justify-content: space-between;
+    }
+    .fetured_sort{
+        margin-left: 0;
+    }
 }
 @media screen and (max-width:600px){
     .b_user, .b_cart{
         display: none;
     }
-    .banner{
-        min-height: 363px;
-    }
     .promo{
         background-image: none;
-        
+    }
+    .banner{
+        margin-bottom: ;
     }
     .banner_img{
         display: none;
@@ -447,5 +575,30 @@ footer{
     .copy{
         text-align: center;
         margin-top: 40px;
+    }
+    .page_name{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .page_title{
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+    .breadcrumb{
+        margin-bottom: 46px;
+    }
+    .fetured_options{
+        font-size: 12px;
+        padding:0;
+        margin-bottom: 32px
+    }
+    .filter_button{
+        font-size:0;
+        padding:16px;
+        background-size: contain;
+    }
+    .block_fetuder{
+        margin-bottom:64px;
+        margin-top: 24px;
     }
 }
