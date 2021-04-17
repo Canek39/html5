@@ -477,7 +477,118 @@ footer{
 .page_nav a.active{
     color:#EF5B70;
 }
+.slide_image{
+    width: 100%;
+}
+.nav_slide{
+    width: 100%;
+    height: 100%;
+}
+.slide_left{
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left: 0;
 
+    font-size: 0;
+    background: url("../img/left_arrow_page_nav.svg") 50% no-repeat rgba(42, 42, 42, 0.15);
+    padding: 15px;
+}
+.slide_right{
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    right: 0;
+
+    font-size: 0;
+    background: url("../img/right_arrow_page_nav.svg") 50% no-repeat rgba(42, 42, 42, 0.15);
+    padding: 15px;
+}
+.slide{
+    background: #F7F7F7;
+    position: relative;
+    z-index: 0;
+}
+.product_fetuder_margin{
+    margin-bottom: 128px;
+    margin-top: 128px;
+}
+.product_desc_block{
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    margin-top: -65px;
+    position: relative;
+}
+.category_product{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin-top: 65px;
+}
+.category_hr{
+    width: 63px;
+    height: 3px;
+    color:#EF5B70;
+    background: #EF5B70;
+    border: none;
+    outline: none;
+    margin: 12px auto;
+}
+.name_product{
+    color:#4D4D4D;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 48px;
+}
+.product_p{
+    max-width: 555px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+.product_price{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+}
+.hr_product{
+    max-width: 642px;
+    border: 1px solid #EAEAEA;
+    margin: 64px auto;
+}
+.product_sort{
+    margin-bottom: 48px;
+}
+.product_sort button{
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    background: url("../img/sort_arrow_ico.png") right center no-repeat;
+    padding-right: 19px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.product_add_cart{
+    margin-bottom: 64px;
+
+    background: url("../img/pink_cart_ico.svg") 24px center no-repeat;
+    padding-left:73px;
+    padding-right: 53px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    cursor: pointer;
+}
 @media screen and (max-width:1023px){
     .menu_list{
         right: 0;
@@ -537,9 +648,7 @@ footer{
     .promo{
         background-image: none;
     }
-    .banner{
-        margin-bottom: ;
-    }
+    
     .banner_img{
         display: none;
     }
