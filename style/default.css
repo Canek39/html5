@@ -194,6 +194,7 @@ li.close_button_menu{
 .product_card{
     max-width:360px;
     margin-bottom: 30px;
+    background: #F8F8F8;
 }
 .product_img_block{
     position: relative;

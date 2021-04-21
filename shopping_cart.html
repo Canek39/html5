@@ -13,9 +13,10 @@
 </head>
 
 <body>
-    <!--------------------------------HEADER----------------------------->
-    <header>
-        <section class="container flex header">
+    <!--=============================HEADER=============================-->
+    <div class="header_back">
+
+        <header class="container flex header">
             <div class="header_left">
                 <a href="index.html" class="b_home">
                     <img src="img/logo.svg" alt="logo">
@@ -27,13 +28,14 @@
             <div class="header_right">
                 <ul class="menu flex">
                     <li class="b_menu">
-                        <a href="#">
+                        <a href="catalog.html">
                             <img src="img/menu.svg" alt="menu">
                         </a>
                         <ul class="menu_list menu_back">
-
-                            <img class="close_button" src="img/close.png" alt="close">
-                            <h4 class="menu_heading">MENU</h4>
+                            <li class="close_button_menu">
+                                <button class="close_btn"></button>
+                            </li>
+                            <li class="menu_heading">MENU</li>
                             <li class="name_cat">MEN
                                 <ul>
                                     <li><a href="#">Accessories</a></li>
@@ -68,23 +70,23 @@
                     </li>
 
                     <li>
-                        <a href="#" class="b_user">
+                        <a href="registration.html" class="b_user">
                             <img src="img/user.svg" alt="user">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="b_cart">
+                        <a href="shopping_cart.html" class="b_cart">
                             <img src="img/cart.svg" alt="cart">
                             <span class="coil">5</span>
                         </a>
                     </li>
                 </ul>
             </div>
+        </header>
 
-        </section>
-    </header>
+    </div>
 
-    <!--------------------------------PROMO----------------------------->
+    <!--=============================PROMO=============================-->
     <section class="banner">
         <div class="container">
             <div class="page_name">
@@ -98,16 +100,16 @@
         </div>
     </section>
 
-    <!--------------------------------CONTENT----------------------------->
+    <!--=============================CONTENT=============================-->
     <main class="container">
         <div class="wrap_sh_cart flex_between">
             <section class="shopping_cart">
-
+                <h2 class="hidden_heading">Products in the shopping cart</h2>
                 <div class="product_cart flex">
                     <img class="cart_img" src="img/Image_1.png" alt="image product">
                     <button class="close_btn btn_pos_cart"></button>
                     <div class="cart_text">
-                        <h2 class="cart_title">MANGO PEOPLE <br>T-SHIRT</h2>
+                        <h3 class="cart_title">MANGO PEOPLE <br>T-SHIRT</h3>
                         <p>Price: <span class="pink_color">$300</span></p>
                         <p>Color: Red</p>
                         <p>Size: Xl </p>
@@ -118,7 +120,7 @@
                     <img class="cart_img" src="img/preview_image.png" alt="image product">
                     <button class="close_btn btn_pos_cart"></button>
                     <div class="cart_text">
-                        <h2 class="cart_title">MANGO PEOPLE <br>T-SHIRT</h2>
+                        <h3 class="cart_title">MANGO PEOPLE <br>T-SHIRT</h3>
                         <p>Price: <span class="pink_color">$300</span></p>
                         <p>Color: Red</p>
                         <p>Size: Xl </p>
@@ -154,30 +156,29 @@
         </div>
     </main>
 
-    <!--------------------------------FEEDBACK----------------------------->
+    <!--=============================FEEDBACK=============================-->
     <div class="mailing_fon">
-        <div class="container">
-            <section class="mailing">
-                <section class="mailing_info">
-                    <img src="img/Intersect.png" alt="img" class="mailing_img">
-                    <p class="mailing_desc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
-                        condimentum“</p>
-                </section>
-                <section class="mailing_form">
-                    <h3 class="mailing_form_heading">
-                        <span class="mailing_span">SUBSCRIBE</span>
-                        FOR OUR NEWLETTER AND PROMOTION
-                    </h3>
-                    <form class="email_form" action="#">
-                        <input class="email_input" type="email" placeholder="Enter Your Email">
-                        <input class="email_button" type="submit" value="Subscribe">
-                    </form>
-                </section>
+        <div class="container mailing">
+            <section class="mailing_info">
+                <h2 class="hidden_heading">Feedback</h2>
+                <img src="img/Intersect.png" alt="img" class="mailing_img">
+                <p class="mailing_desc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                    condimentum“</p>
+            </section>
+            <section class="mailing_form">
+                <h2 class="mailing_form_heading">
+                    <span class="mailing_span">SUBSCRIBE</span>
+                    FOR OUR NEWLETTER AND PROMOTION
+                </h2>
+                <form class="email_form" action="#">
+                    <input class="email_input" type="email" placeholder="Enter Your Email">
+                    <input class="email_button" type="submit" value="Subscribe">
+                </form>
             </section>
         </div>
     </div>
 
-    <!--------------------------------FOOTER----------------------------->
+    <!--=============================FOOTER=============================-->
     <footer>
         <div class="container">
             <div class="footer_wrapper">

@@ -13,9 +13,10 @@
 </head>
 
 <body>
-    <!--------------------------------HEADER----------------------------->
-    <header>
-        <section class="container flex header">
+    <!--=============================HEADER=============================-->
+    <div class="header_back">
+
+        <header class="container flex header">
             <div class="header_left">
                 <a href="index.html" class="b_home">
                     <img src="img/logo.svg" alt="logo">
@@ -27,13 +28,14 @@
             <div class="header_right">
                 <ul class="menu flex">
                     <li class="b_menu">
-                        <a href="#">
+                        <a href="catalog.html">
                             <img src="img/menu.svg" alt="menu">
                         </a>
                         <ul class="menu_list menu_back">
-
-                            <img class="close_button" src="img/close.png" alt="close">
-                            <h4 class="menu_heading">MENU</h4>
+                            <li class="close_button_menu">
+                                <button class="close_btn"></button>
+                            </li>
+                            <li class="menu_heading">MENU</li>
                             <li class="name_cat">MEN
                                 <ul>
                                     <li><a href="#">Accessories</a></li>
@@ -68,37 +70,38 @@
                     </li>
 
                     <li>
-                        <a href="#" class="b_user">
+                        <a href="registration.html" class="b_user">
                             <img src="img/user.svg" alt="user">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="b_cart">
+                        <a href="shopping_cart.html" class="b_cart">
                             <img src="img/cart.svg" alt="cart">
                             <span class="coil">5</span>
                         </a>
                     </li>
                 </ul>
             </div>
+        </header>
 
-        </section>
-    </header>
+    </div>
 
-    <!--------------------------------PROMO----------------------------->
+    <!--=============================PROMO=============================-->
     <section class="banner">
         <div class="container">
             <div class="page_name">
                 <h1 class="page_title">NEW ARRIVALS</h1>
-                <section class="breadcrumb">
+                <div class="breadcrumb">
                     <a href="index.html" class="breadcrumb_link">HOME</a> /
                     <a href="#" class="breadcrumb_link">MEN</a> /
                     <span class="current_page">NEW ARRIVALS</span>
-                </section>
+                </div>
             </div>
         </div>
     </section>
-    <!--------------------------------SLIDE----------------------------->
+    <!--=============================SLIDE=============================-->
     <section class="slide">
+        <h2 class="hidden_heading">Slide product</h2>
         <img class="slide_image" src="img/image_slide.png" alt="image slide">
         <div class="nav_slide">
             <a href="#" class="slide_left">left</a>
@@ -106,15 +109,13 @@
         </div>
     </section>
 
-    <!--------------------------------CONTENT----------------------------->
+    <!--=============================CONTENT=============================-->
     <main class="container">
 
-        <!--------------------------------DESCRIPTION PRODUCT----------------------------->
+        <!--=============================DESCRIPTION PRODUCT=============================-->
         <section class="product_desc_block">
-            <p class="category_product">
-                WOMEN COLLECTION
-                <hr class="category_hr">
-            </p>
+            <p class="category_product">WOMEN COLLECTION</p>
+            <hr class="category_hr">
             <h2 class="name_product">MOSCHINO CHEAP AND CHIC</h2>
             <p class="product_p">Compellingly actualize fully researched processes before proactive outsourcing.
                 Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize
@@ -122,21 +123,22 @@
             <p class="product_price">$561</p>
 
             <hr class="hr_product">
-            <section class="product_sort">
+            <div class="product_sort">
                 <button>CHOOSE COLOR</button>
                 <button>CHOOSE SIZE </button>
                 <button>QUANTITY</button>
-            </section>
+            </div>
             <button class="product_add_cart">Add to Cart</button>
         </section>
 
-        <!--------------------------------Fetured Items----------------------------->
+        <!--=============================Fetured Items=============================-->
         <section class="block_fetuder product_fetuder_margin">
+            <h2 class="hidden_heading">Fetured Items</h2>
             <div class="fetured_card">
                 <div class="product_card">
                     <div class="product_img_block">
                         <div class="add_cart_back">
-                            <a href="#" class="add_cart_button">Add to Cart</a>
+                            <button class="add_cart_button">Add to Cart</button>
                         </div>
                         <img class="img_product" src="img/Rectangle_15.png" alt="img">
 
@@ -154,7 +156,7 @@
                 <div class="product_card">
                     <div class="product_img_block">
                         <div class="add_cart_back">
-                            <a href="#" class="add_cart_button">Add to Cart</a>
+                            <button class="add_cart_button">Add to Cart</button>
                         </div>
                         <img class="img_product" src="img/preview_image.png" alt="img">
 
@@ -171,7 +173,7 @@
                 <div class="product_card">
                     <div class="product_img_block">
                         <div class="add_cart_back">
-                            <a href="#" class="add_cart_button">Add to Cart</a>
+                            <button class="add_cart_button">Add to Cart</button>
                         </div>
                         <img class="img_product" src="img/Image_1.png" alt="img">
 
@@ -188,30 +190,29 @@
         </section>
     </main>
 
-    <!--------------------------------FEEDBACK----------------------------->
+    <!--=============================FEEDBACK=============================-->
     <div class="mailing_fon">
-        <div class="container">
-            <section class="mailing">
-                <section class="mailing_info">
-                    <img src="img/Intersect.png" alt="img" class="mailing_img">
-                    <p class="mailing_desc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
-                        condimentum“</p>
-                </section>
-                <section class="mailing_form">
-                    <h3 class="mailing_form_heading">
-                        <span class="mailing_span">SUBSCRIBE</span>
-                        FOR OUR NEWLETTER AND PROMOTION
-                    </h3>
-                    <form class="email_form" action="#">
-                        <input class="email_input" type="email" placeholder="Enter Your Email">
-                        <input class="email_button" type="submit" value="Subscribe">
-                    </form>
-                </section>
+        <div class="container mailing">
+            <section class="mailing_info">
+                <h2 class="hidden_heading">Feedback</h2>
+                <img src="img/Intersect.png" alt="img" class="mailing_img">
+                <p class="mailing_desc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                    condimentum“</p>
+            </section>
+            <section class="mailing_form">
+                <h2 class="mailing_form_heading">
+                    <span class="mailing_span">SUBSCRIBE</span>
+                    FOR OUR NEWLETTER AND PROMOTION
+                </h2>
+                <form class="email_form" action="#">
+                    <input class="email_input" type="email" placeholder="Enter Your Email">
+                    <input class="email_button" type="submit" value="Subscribe">
+                </form>
             </section>
         </div>
     </div>
 
-    <!--------------------------------FOOTER----------------------------->
+    <!--=============================FOOTER=============================-->
     <footer>
         <div class="container">
             <div class="footer_wrapper">
