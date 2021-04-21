@@ -9,7 +9,7 @@ body{
     height: 1px;
     opacity: 0;
 }
-header{
+.header_back{
     background: #222222;
 }
 
@@ -68,22 +68,13 @@ header{
 .b_menu:hover .menu_list{
     display: block;
 }
-.close_button{
-    float: right;
-    margin: 16px;
-
-}
 .close_btn{
-    background: url("../img/close.png") no-repeat;
+    background: url("../img/close.png") center no-repeat;
     cursor: pointer;
-    padding: 6px;
+    width: 13px;
+    height: 13px;
     border: none;
     outline: none;
-}
-.menu_heading{
-    font-weight: bold;
-    color: #000000;
-    margin: 37px 34px 24px;
 }
 .name_cat{
     color:#F16D7F;
@@ -95,6 +86,18 @@ header{
 }
 .menu_list li{
     padding: 12px 20px 0;
+}
+
+li.menu_heading{
+    font-weight: bold;
+    color: #000000;
+    padding: 0;
+    margin: 37px 34px 24px;
+}
+li.close_button_menu{
+    padding: 0;
+    float: right;
+    margin: 16px;
 }
 .banner{
     background: #F1E4E6;
@@ -678,6 +681,9 @@ input{
     line-height: 16px;
     margin-bottom: 20px;
 }
+input[type="radio"]{
+    width: inherit;
+}
 .adress_form button{
     padding:10px 15px;
     color: #A4A4A4;
@@ -718,6 +724,29 @@ input{
     color: #fff !important;
     margin-top: 17px;
     padding: 15px 41px !important;
+}
+
+.wrap_reg{
+    margin-top: 64px;
+    margin-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+.registration{
+    max-width: 360px;
+    margin-right: 22px;
+}
+.advantages_reg{
+    max-width: 652px;
+}
+.desc_input{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    display: block;
+    margin-bottom: 20px;
+
 }
 
 @media screen and (max-width:1023px){
@@ -809,11 +838,10 @@ input{
 @media screen and (max-width:600px){
     .b_user, .b_cart{
         display: none;
-    }
+    }  
     .promo{
         background-image: none;
     }
-    
     .banner_img{
         display: none;
     }
