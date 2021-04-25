@@ -175,7 +175,7 @@ li.close_button_menu{
 }
 .fetured_card{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .fetured_heading{
@@ -323,7 +323,7 @@ li.close_button_menu{
 
 .mailing{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 448px;
     /* margin: 0 32px; */
@@ -344,7 +344,7 @@ li.close_button_menu{
     font-style: italic;
 }
 .mailing_form{
-    max-width: 557px;
+    padding: 0 100px;
     text-align: center;
 }
 .mailing_form_heading{
@@ -459,26 +459,93 @@ footer{
 .fetured_options{
     font-size: 14px;
     line-height: 17px;
-    padding: 0 16px;
     margin-bottom: 64px;
     display: flex;
+    min-height: 43px;
 }
+details{ cursor: pointer; }
+details > summary { list-style: none; }
+
+.filter {
+    width: 360px;
+    background-color: #FFF;
+    position: relative;
+    outline: none;
+    border: none;
+  }
+  .filter[open] {
+    /* box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21); */
+  }
+  .filter[open]>summary {
+    color: #EF5B70;
+    outline: none;
+    border: none;
+    position: absolute;
+    z-index: 999;
+  }
+  .filter_content {
+    position: absolute;
+    background-color: #FFF;
+    width: 360px;
+    left: 0;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    z-index: 10;
+    padding-top: 46px;
+  }
 .filter_button{
-    background: url("../img/filter_ico.svg") center right no-repeat;
+    padding: 13px 16px;
+    /* background: url("../img/filter_ico.svg") center right no-repeat; */
     text-decoration: none;
     font-weight: 600;
     color:#000;
     padding-right: 27px;
 }
-.fetured_sort{
-    margin-left: 304px;
+.filter[open] .filter_ico{ fill:#EF5B70; }
+
+details details{ margin: 0 16px; }
+
+.filter_content_details[open]>summary{ color: #EF5B70; }
+
+.desing-sum{
+    border-left: 5px solid #EF5B70;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 11px;
+    margin-bottom: 24px;
 }
+.filter_categories{ margin-bottom: 24px; }
+
+.filter_categories li{
+    color:#6F6E6E;
+    margin-left:18px;
+    margin-bottom: 11px;
+}
+
+.fetured_sort{ 
+    margin-left: 19px;
+    display: flex;
+    align-items: center;
+}
+
 .fetured_sort_button{
-    color: #6F6E6E;
-    text-decoration: none;
+    
+    position: relative;
+}
+.fetured_sort_button summary{
     background: url("../img/sort_arrow_ico.png") center right no-repeat;
     padding-right: 22px;
-    margin-left: 28px;
+    margin-right: 28px;
+    color: #6F6E6E;
+    padding-left: 11px;
+}
+.fetured_sort_button_filter{
+    position: absolute;
+    width: 79px;
+    box-sizing: border-box;
+    background-color: #FFF;
+    z-index: 10;
+    padding: 9.5px;
+    margin-top: 5px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .page_nav{
@@ -717,7 +784,7 @@ input{
     margin-bottom: 20px;
     box-sizing: border-box;
 }
-input[type="radio"]{
+input[type="radio"], input[type="checkbox"]{
     width: inherit;
 }
 .adress_form button{
