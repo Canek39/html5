@@ -58,14 +58,14 @@ body {
   opacity: 0;
 }
 
-.header_back {
-  background: #222222;
-}
-
 .container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+.header_back {
+  background: #222222;
 }
 
 .flex {
@@ -323,7 +323,6 @@ li.close_button_menu {
 }
 
 .add_cart_button {
-  /* background: url(../img/cart.svg) 13px center no-repeat; */
   background: none;
   padding: 15px 15px 15px 50px;
   text-decoration: none;
@@ -464,7 +463,6 @@ li.close_button_menu {
       -ms-flex-align: center;
           align-items: center;
   min-height: 448px;
-  /* margin: 0 32px; */
 }
 
 .mailing_info {
@@ -554,7 +552,6 @@ footer {
 }
 
 .fb_ico {
-  /* background: url("../img/sf.png") no-repeat; */
   fill: black;
   background: white;
   padding: 9px 12px;
@@ -562,7 +559,6 @@ footer {
 }
 
 .instagram_ico {
-  /* background: url("../img/si.png") no-repeat; */
   fill: black;
   background: white;
   padding: 9px 8.5px;
@@ -570,7 +566,6 @@ footer {
 }
 
 .pinterest_ico {
-  /* background: url("../img/sp.png") no-repeat; */
   fill: black;
   background: white;
   padding: 8.5px 10px;
@@ -578,14 +573,12 @@ footer {
 }
 
 .twitter_ico {
-  /* background: url("../img/st.png") no-repeat; */
   fill: black;
   background: white;
   padding: 9.5px 8px;
 }
 
 .fb_ico:hover, .instagram_ico:hover, .pinterest_ico:hover, .twitter_ico:hover {
-  /* background: url("../img/sf_hover.png") no-repeat; */
   fill: white;
   background: #F16D7F;
 }
@@ -643,6 +636,7 @@ details > summary {
   list-style: none;
 }
 
+details > summary
 .filter {
   width: 360px;
   background-color: #FFF;
@@ -776,13 +770,14 @@ details details {
   color: #F16D7F;
 }
 
-.slide_image {
-  width: 100%;
-}
-
-.nav_slide {
-  width: 100%;
-  height: 100%;
+.slide {
+  background: #F7F7F7;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slide_left {
@@ -805,10 +800,8 @@ details details {
   padding: 15px;
 }
 
-.slide {
-  background: #F7F7F7;
-  position: relative;
-  z-index: 0;
+.slide_image {
+  margin: 0 auto;
 }
 
 .product_fetuder_margin {
