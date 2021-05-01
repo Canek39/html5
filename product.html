@@ -22,65 +22,62 @@
                     <img src="img/logo.svg" alt="logo">
                 </a>
                 <a href="#" class="b_search">
-                    <img src="img/search.svg" alt="search">
+                    <img class="animation-zoom" src="img/search.svg" alt="search">
                 </a>
             </div>
             <div class="header_right">
-                <ul class="menu flex">
-                    <li class="b_menu">
-                        <a href="#">
-                            <img src="img/menu.svg" alt="menu">
-                        </a>
-                        <ul class="menu_list menu_back">
-                            <li class="close_button_menu">
-                                <button class="close_btn"></button>
-                            </li>
-                            <li class="menu_heading">MENU</li>
-                            <li class="name_cat">MEN
-                                <ul>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Bags</a></li>
-                                    <li><a href="#">Denim</a></li>
-                                    <li><a href="#">T-Shirts</a></li>
-                                </ul>
-                            </li>
+                <input class="menu_chekbox" type="checkbox" id="toggle">
+                <label class="label_menu" for="toggle">
+                    <img class="animation-zoom" src="img/menu.svg" alt="menu">
+                </label>
+                <nav class="nav">
+                    <div class="close_button_menu">
+                        <label for="toggle" class="close_btn">
+                            <img src="img/close.png" alt="X">
+                        </label>
+                    </div>
+                    <p class="menu_heading">MENU</p>
+                    <ul class="menu_list menu_back">
+                        <li class="name_cat">MEN
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Denim</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                            </ul>
+                        </li>
 
-                            <li class="name_cat">WOOMEN
-                                <ul>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Jackets & Coats</a></li>
-                                    <li><a href="#">Polos</a></li>
-                                    <li><a href="#">T-Shirts</a></li>
-                                    <li><a href="#">Shirts</a></li>
-                                </ul>
-                            </li>
+                        <li class="name_cat">WOOMEN
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                            </ul>
+                        </li>
 
-                            <li class="name_cat">KIDS
-                                <ul>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Jackets & Coats</a></li>
-                                    <li><a href="#">Polos</a></li>
-                                    <li><a href="#">T-Shirts</a></li>
-                                    <li><a href="#">Shirts</a></li>
-                                    <li><a href="#">Bags</a></li>
-                                </ul>
-                            </li>
+                        <li class="name_cat">KIDS
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Bags</a></li>
+                            </ul>
+                        </li>
 
-                        </ul>
-                    </li>
+                    </ul>
+                </nav>
+                <a href="registration.html" class="b_user">
+                    <img class="animation-zoom" src="img/user.svg" alt="user">
+                </a>
+                <a href="shopping-cart.html" class="b_cart">
+                    <img class="animation-zoom" src="img/cart.svg" alt="cart">
+                    <span class="coil">5</span>
+                </a>
 
-                    <li>
-                        <a href="registration.html" class="b_user">
-                            <img src="img/user.svg" alt="user">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="shopping_cart.html" class="b_cart">
-                            <img src="img/cart.svg" alt="cart">
-                            <span class="coil">5</span>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </header>
 
@@ -104,8 +101,17 @@
         <h2 class="hidden_heading">Slide product</h2>
         <img class="slide_image" src="img/slide-mini.png" alt="image slide">
         <div class="nav_slide">
-            <a href="#" class="slide_left">left</a>
-            <a href="#" class="slide_right">right</a>
+            <a href="#" class="slide_left">
+                <svg class="slide_left_arrow" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z" />
+                </svg>
+            </a>
+            <a href="#" class="slide_right">
+                <svg class="slide_right_arrow" viewBox="0 0 13 23" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.299805 19.2499L8.0498 11.4999L0.299805 3.7499L1.8498 0.649902L12.6998 11.4999L1.8498 22.3499L0.299805 19.2499Z" />
+                </svg>
+            </a>
         </div>
     </section>
 
