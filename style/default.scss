@@ -21,7 +21,7 @@ $pink-color: #F16D7F;
   }
 
 details>summary{ list-style:none;}
-
+.hidden-checkbox-marker{ display: none; }
 .header_back{
     background: $default-color;
 }
@@ -297,6 +297,9 @@ details>summary{ list-style:none;}
 }
 .heading_product_link{
     text-decoration: none;
+}
+.heading_product_link:hover{
+    text-decoration: underline;
 }
 .desc_product{
     font-weight: 300;
@@ -618,6 +621,7 @@ details details{ margin: 0 16px; }
     border-bottom: 1px solid #EBEBEB;
     padding: 11px;
     margin-bottom: 24px;
+    display: block;
 }
 .filter_categories{ margin-bottom: 24px; }
 
@@ -627,6 +631,18 @@ details details{ margin: 0 16px; }
     margin-bottom: 11px;
 }
 
+.filter-wrap{ position: relative; }
+.hidden-block{
+    overflow: hidden;
+    height:0;
+    transition: all 0.3s ease-in-out;
+}
+#categories:checked ~ .desing-sum-categories, #brand:checked ~ .desing-sum-brand, #designer:checked ~ .desing-sum-designer{ color:$pink-color; }
+#categories:checked ~ .hidden-categories, #brand:checked ~ .hidden-brand, #designer:checked ~ .hidden-designer{
+    height: 327px;
+    transition: all 0.3s ease-in-out;
+}
+
 .fetured_sort{ 
     margin-left: 19px;
     display: flex;
@@ -634,7 +650,7 @@ details details{ margin: 0 16px; }
 }
 
 .fetured_sort_button{
-    
+    transition: 0.4s;
     position: relative;
 }
 .fetured_sort_button summary{
@@ -646,13 +662,19 @@ details details{ margin: 0 16px; }
 }
 .fetured_sort_button_filter{
     position: absolute;
-    width: 79px;
+    width: 100%;
     box-sizing: border-box;
     background-color: #FFF;
     z-index: 10;
     padding: 9.5px;
     margin-top: 5px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.price-filter{
+    width: 300%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .page_nav{
@@ -924,11 +946,11 @@ input{
 input[type="radio"], input[type="checkbox"]{
     width: inherit;
 }
-input[type="radio"]:focus, input[type="checkbox"]:focus{
-	animation: none;
+input[type="range"]{
+    margin: 0;
+    padding: 0;
 }
-input:focus{
-	
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus{
 	
 	border: 1px solid $pink-color;
 	transition: border 0.5s ease;

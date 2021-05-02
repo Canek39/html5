@@ -119,35 +119,80 @@
                         </svg>
                     </label>
                     <div class="filter_content">
-                        <details class="filter_content_details">
-                            <summary class="desing-sum"> CATEGORY </summary>
-                            <ul class="filter_categories">
-                                <li>Accessories</li>
-                                <li>Bags</li>
-                                <li>Denim</li>
-                                <li>Hoodies & Sweatshirts</li>
-                                <li>Jackets & Coats</li>
-                                <li>Polos</li>
-                                <li>Shirts</li>
-                                <li>Shoes</li>
-                                <li>Sweaters & Knits</li>
-                                <li>T-Shirts</li>
-                                <li>Tanks</li>
-                            </ul>
-                        </details>
-                        <details class="filter_content_details">
-                            <summary class="desing-sum"> BRAND </summary>
+                        <div class="filter-wrap">
+                            <!-- One Filter Category -->
+                            <input class="hidden-checkbox-marker" type="checkbox" id="categories">
+                            <label class="desing-sum desing-sum-categories" for="categories">CATEGORIES</label>
+                            <div class="hidden-block hidden-categories">
+                                <ul class="filter_categories">
+                                    <li>Accessories</li>
+                                    <li>Bags</li>
+                                    <li>Denim</li>
+                                    <li>Hoodies & Sweatshirts</li>
+                                    <li>Jackets & Coats</li>
+                                    <li>Polos</li>
+                                    <li>Shirts</li>
+                                    <li>Shoes</li>
+                                    <li>Sweaters & Knits</li>
+                                    <li>T-Shirts</li>
+                                    <li>Tanks</li>
+                                </ul>
+                            </div>
+                            <!-- Two Filter Category -->
+                            <input class="hidden-checkbox-marker" type="checkbox" id="brand">
+                            <label class="desing-sum desing-sum-brand" for="brand">BRAND</label>
+                            <div class="hidden-block hidden-brand">
+                                <ul class="filter_categories">
+                                    <li>Accessories</li>
+                                    <li>Bags</li>
+                                    <li>Denim</li>
+                                    <li>Hoodies & Sweatshirts</li>
+                                    <li>Jackets & Coats</li>
+                                    <li>Polos</li>
+                                    <li>Shirts</li>
+                                    <li>Shoes</li>
+                                    <li>Sweaters & Knits</li>
+                                    <li>T-Shirts</li>
+                                    <li>Tanks</li>
+                                </ul>
+                            </div>
+                            <!-- Three Filter Category -->
+                            <input class="hidden-checkbox-marker" type="checkbox" id="designer">
+                            <label class="desing-sum desing-sum-designer" for="designer">DESIGNER</label>
+                            <div class="hidden-block hidden-designer">
+                                <ul class="filter_categories">
+                                    <li>Accessories</li>
+                                    <li>Bags</li>
+                                    <li>Denim</li>
+                                    <li>Hoodies & Sweatshirts</li>
+                                    <li>Jackets & Coats</li>
+                                    <li>Polos</li>
+                                    <li>Shirts</li>
+                                    <li>Shoes</li>
+                                    <li>Sweaters & Knits</li>
+                                    <li>T-Shirts</li>
+                                    <li>Tanks</li>
+                                </ul>
+                            </div>
 
-                        </details>
-                        <details class="filter_content_details">
-                            <summary class="desing-sum"> DESIGNER </summary>
 
-                        </details>
+                            <!-- <details class="filter_content_details">
+                                <summary class="desing-sum"> BRAND </summary>
+
+                            </details>
+                            <details class="filter_content_details">
+                                <summary class="desing-sum"> DESIGNER </summary>
+
+                            </details> -->
+                        </div>
                     </div>
                 </div>
                 <div class="fetured_sort">
                     <details class="fetured_sort_button">
                         <summary>TRENDING NOW</summary>
+                        <div class="fetured_sort_button_filter">
+
+                        </div>
                     </details>
                     <details class="fetured_sort_button">
                         <summary>SIZE</summary>
@@ -160,6 +205,11 @@
                     </details>
                     <details class="fetured_sort_button">
                         <summary>PRICE</summary>
+                        <div class="fetured_sort_button_filter price-filter">
+                            <label class="price-from">From<input type="text" value="0"></label>
+                            <input type="range" min="0" max="10000" value="1">
+                            <label class="price-to">To<input type="text" value="10000"></label>
+                        </div>
                     </details>
                 </div>
             </div>

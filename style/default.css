@@ -95,6 +95,10 @@ details > summary {
   list-style: none;
 }
 
+.hidden-checkbox-marker {
+  display: none;
+}
+
 .header_back {
   background: #222222;
 }
@@ -456,6 +460,10 @@ details > summary {
 
 .heading_product_link {
   text-decoration: none;
+}
+
+.heading_product_link:hover {
+  text-decoration: underline;
 }
 
 .desc_product {
@@ -927,6 +935,7 @@ details details {
   border-bottom: 1px solid #EBEBEB;
   padding: 11px;
   margin-bottom: 24px;
+  display: block;
 }
 
 .filter_categories {
@@ -937,6 +946,27 @@ details details {
   color: #6F6E6E;
   margin-left: 18px;
   margin-bottom: 11px;
+}
+
+.filter-wrap {
+  position: relative;
+}
+
+.hidden-block {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#categories:checked ~ .desing-sum-categories, #brand:checked ~ .desing-sum-brand, #designer:checked ~ .desing-sum-designer {
+  color: #F16D7F;
+}
+
+#categories:checked ~ .hidden-categories, #brand:checked ~ .hidden-brand, #designer:checked ~ .hidden-designer {
+  height: 327px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .fetured_sort {
@@ -950,6 +980,8 @@ details details {
 }
 
 .fetured_sort_button {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   position: relative;
 }
 
@@ -963,7 +995,7 @@ details details {
 
 .fetured_sort_button_filter {
   position: absolute;
-  width: 79px;
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #FFF;
@@ -972,6 +1004,19 @@ details details {
   margin-top: 5px;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.price-filter {
+  width: 300%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page_nav {
@@ -1295,12 +1340,12 @@ input[type="radio"], input[type="checkbox"] {
   width: inherit;
 }
 
-input[type="radio"]:focus, input[type="checkbox"]:focus {
-  -webkit-animation: none;
-          animation: none;
+input[type="range"] {
+  margin: 0;
+  padding: 0;
 }
 
-input:focus {
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus {
   border: 1px solid #F16D7F;
   -webkit-transition: border 0.5s ease;
   transition: border 0.5s ease;
