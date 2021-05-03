@@ -54,13 +54,19 @@ details>summary{ list-style:none;}
     }
     &-input{
         padding-left: 30px;
+<<<<<<< HEAD
         margin-bottom:0;
+=======
+>>>>>>> master
         border-radius: 5px 0 0 5px;
     }
     &-button{
         width:60px;
         padding: 0;
+<<<<<<< HEAD
         margin-bottom:0;
+=======
+>>>>>>> master
         background: $pink-color;
         border: 1px solid $pink-color;
         color:#FFF;
@@ -78,6 +84,10 @@ details>summary{ list-style:none;}
 #search:checked ~ .search-block{
     opacity: 1;
     transform: scaleX(1);
+<<<<<<< HEAD
+=======
+    
+>>>>>>> master
 }
 
 #toggle {
