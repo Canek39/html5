@@ -147,28 +147,14 @@ details > summary {
 
 .search-input {
   padding-left: 30px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-bottom: 0;
-=======
->>>>>>> master
-=======
-  margin-bottom: 0;
->>>>>>> 155766c... added search input
   border-radius: 5px 0 0 5px;
 }
 
 .search-button {
   width: 60px;
   padding: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-bottom: 0;
-=======
->>>>>>> master
-=======
-  margin-bottom: 0;
->>>>>>> 155766c... added search input
   background: #F16D7F;
   border: 1px solid #F16D7F;
   color: #FFF;

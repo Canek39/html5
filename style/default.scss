@@ -54,27 +54,13 @@ details>summary{ list-style:none;}
     }
     &-input{
         padding-left: 30px;
-<<<<<<< HEAD
-<<<<<<< HEAD
         margin-bottom:0;
-=======
->>>>>>> master
-=======
-        margin-bottom:0;
->>>>>>> 155766c... added search input
         border-radius: 5px 0 0 5px;
     }
     &-button{
         width:60px;
         padding: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
         margin-bottom:0;
-=======
->>>>>>> master
-=======
-        margin-bottom:0;
->>>>>>> 155766c... added search input
         background: $pink-color;
         border: 1px solid $pink-color;
         color:#FFF;
@@ -92,13 +78,6 @@ details>summary{ list-style:none;}
 #search:checked ~ .search-block{
     opacity: 1;
     transform: scaleX(1);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    
->>>>>>> master
-=======
->>>>>>> 155766c... added search input
 }
 
 #toggle {
